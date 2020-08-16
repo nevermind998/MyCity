@@ -267,7 +267,7 @@ namespace backendPoSlojevima.DAL
            
             if (korisnik == null) return;
             var message = new MimeMessage();
-            message.From.Add(new MailboxAddress("Moj grad", "mojgrad2020@gmail.com"));
+            message.From.Add(new MailboxAddress("Moj grad", "**@gmail.com"));
             message.To.Add(new MailboxAddress("Moj grad", korisnik.email));
             message.Subject = "Moj grad";
             var random = new Random();
@@ -284,7 +284,7 @@ namespace backendPoSlojevima.DAL
             {
 
                 client.Connect("smtp.gmail.com", 587, false);
-                client.Authenticate("mojgrad2020@gmail.com", "kragujevac034");
+                client.Authenticate("****@gmail.com", "***");
                 client.Send(message);
                 client.Disconnect(true);
                 //client.Dispose();
@@ -313,7 +313,7 @@ namespace backendPoSlojevima.DAL
             if (admin != null)
             {
                 var message = new MimeMessage();
-                message.From.Add(new MailboxAddress("Moj grad", "mojgrad2020@gmail.com"));
+                message.From.Add(new MailboxAddress("Moj grad", "**@gmail.com"));
                 message.To.Add(new MailboxAddress("Moj grad", admin.email));
                 message.Subject = "Moj grad";
                 message.Body = new TextPart("plain")
@@ -324,7 +324,7 @@ namespace backendPoSlojevima.DAL
                 {
 
                     client.Connect("smtp.gmail.com", 587, false);
-                    client.Authenticate("mojgrad2020@gmail.com", "kragujevac034");
+                    client.Authenticate("**@gmail.com", "**");
                     client.Send(message);
                     client.Disconnect(true);
                     //client.Dispose();

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backendPoSlojevima", "backendPoSlojevima\backendPoSlojevima.csproj", "{94AB3641-6923-46D3-97EC-1E09E088296D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCity_backend", "backendPoSlojevima\MyCity_backend.csproj", "{94AB3641-6923-46D3-97EC-1E09E088296D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
